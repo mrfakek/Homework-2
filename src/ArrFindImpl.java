@@ -1,9 +1,8 @@
-public class MySearch {
+public class ArrFindImpl implements FindInArr {
     int[] array;
-    MySearch (int[] _Array){
-        array = _Array;
-    }
-    void extremum(){
+
+    public void extremum(int[] _array){
+        array = _array;
         int max = array[0];
         int min = array[0];
         for (int i = 0; i < array.length; i++){
@@ -17,7 +16,9 @@ public class MySearch {
         System.out.println("Максимальное число массива : "+ max);
         System.out.println("Минимальное число массива : "+ min);
     }
-    void evenOrNot(){
+
+   public void evenOrNot(int[] _array){
+        array = _array;
         System.out.print("Четные числа массива : ");
         for (int i = 0; i < array.length; i++){
             if (array[i] % 2 == 0){
@@ -34,7 +35,8 @@ public class MySearch {
         }
         System.out.println();
     }
-    void numSequence(){
+   public void numSequence(int[] _array){
+        array = _array;
         System.out.print("Последовательные числа: ");
         for (int i = 0; i < array.length; i++) {
             int future= array[i]/10; // Переменная которая будет на шаг впереди=)
@@ -56,7 +58,8 @@ public class MySearch {
         System.out.println();
     }
 
-    void longerOrShorter(){
+    public void longerOrShorter(int[] _array){
+        array = _array;
         int longer = array[0] <0 ? array[0]*-1 : array[0];
         int shorter = array[0] <0 ? array[0]*-1 : array[0];
         int numLong =0;
@@ -76,7 +79,8 @@ public class MySearch {
         System.out.println("Самое короткое число массива : "+ array[numShort]);
     }
 
-    void palendrome(){
+    public void palendrome(int[] _array){
+        array = _array;
         System.out.print("Числа массива являющиеся Палиндромами : ");
         for (int i = 0, count = 0; i< array.length; i++){
             int buff =0;
