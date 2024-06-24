@@ -79,7 +79,7 @@ public class ArrFindImpl implements FindInArr {
         System.out.println("Самое короткое число массива : "+ array[numShort]);
     }
 
-    public void palendrome(int[] _array){
+    public void palindrome(int[] _array){
         array = _array;
         System.out.print("Числа массива являющиеся Палиндромами : ");
         for (int i = 0, count = 0; i< array.length; i++){
@@ -95,6 +95,7 @@ public class ArrFindImpl implements FindInArr {
                 System.out.println("Чисел Палиндромов в массиве не найдено =(");
             }
         }
+        System.out.println();
 
     }
 }
